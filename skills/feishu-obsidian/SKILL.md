@@ -78,6 +78,26 @@ Obsidian Vault/
 
 ## 四、飞书内容格式规范
 
+### 4.0 ⚠️ 跨平台插件 YAML 兼容性（重要）
+
+Obsidian 知乎插件（v0.4.2）在解析 frontmatter 时，**不支持多行 YAML 列表格式**。以下格式会触发 `No topics found in frontmatter` 错误：
+
+```yaml
+# ❌ 错误格式（知乎插件不支持）
+zhihu-topics:
+  - 黑客松
+  - AI编程
+```
+
+**正确格式**：使用内联数组（inline array）语法：
+
+```yaml
+# ✅ 正确格式
+zhihu-topics: [黑客松, AI编程, 人工智能工具, 效率工具, 开发者工具]
+```
+
+> 此兼容性问题同样适用于所有使用 Obsidian `metadataCache.getFileCache()` 读取 frontmatter 的第三方插件。在同时生成飞书文档和知乎文章时，统一使用内联数组格式。
+
 ### 4.1 标题层级
 
 - 一级标题 `#` → 飞书文档标题（通常不用在正文中）
