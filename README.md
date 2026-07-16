@@ -30,6 +30,12 @@ sparkcon-skills/
 | 类别 | 数量 | 说明 |
 |-----|------|------|
 | Managed Skills | 45+ | 本地创建和管理的技能 |
+| Plugin Skills | 4 | 与黑客松相关的插件技能 |
+| **总计** | **40+** | 覆盖开发、数据、可视化、文档等多领域 |
+
+| 类别 | 数量 | 说明 |
+|-----|------|------|
+| Managed Skills | 45+ | 本地创建和管理的技能 |
 | Plugin Skills | 11 | 通过 Kimi 插件安装的技能 |
 | **总计** | **56+** | 覆盖开发、数据、可视化、文档等多领域 |
 
@@ -57,6 +63,8 @@ git pull origin main
 - `stream-rgbd-elixir-python` — Elixir + Python 实时推理
 
 ### 数据与可视化
+- `seaborn-visualization` — 图表与数据可视化
+- `xlsx` — Excel 分析
 - `seaborn-visualization` — 图表与数据可视化
 - `stock-assistant` — 股票信息原子能力
 - `xlsx` — Excel 分析
